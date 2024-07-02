@@ -11,6 +11,7 @@ function moreTasks(){
 
     if(textBox.value === ''){
         alert("write down a task");
+        tasknum =-1;
     }
     else{
         let list = document.createElement("li");
