@@ -14,13 +14,31 @@
     background: linear-gradient(200deg, #219ebc,#08576b, #023047);
     background-size: 400% 400%;
     animation: base-animation 10s ease infinite; 
+    -moz-animation: base-animation 10s ease infinite;
+    -webkit-animation: base-animation 10s ease infinite;
+    -o-animation: base-animation 10s ease infinite;
 }
 @keyframes base-animation{
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
+@-webkit-keyframes base-animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes base-animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
 
+@-o-keyframes base-animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
 .topbar{
     overflow: hidden;
     height: 1.2cm;
@@ -64,13 +82,10 @@
     background: linear-gradient(135deg, #F4FFF8, #8BAAAD);
     border-radius: 10px;
     background-size: 400% 400%;
-    animation: mid-animation 15s ease infinite;
-}
-
-@keyframes mid-animation{
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    animation: base-animation 15s ease infinite;
+    -moz-animation: base-animation 15s ease infinite;
+    -webkit-animation: base-animation 15s ease infinite;
+    -o-animation: base-animation 15s ease infinite;
 }
 
 .middlething h1{
@@ -99,15 +114,12 @@ ul li {
     cursor: pointer;
     background: linear-gradient(30deg, #F4FFF8, #e4feff);
     border-radius: 10px;
-    animation: ulli-anim 7s ease infinite;
+    animation: base-animation 7s ease infinite;
+    -moz-animation: base-animation 7s ease infinite;
+    -webkit-animation: base-animation 7s ease infinite;
+    -o-animation: base-animation 7s ease infinite;
     transition: 1s;
     
-}
-
-@keyframes ulli-anim{
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
 }
 
 ul li::before {
@@ -122,17 +134,8 @@ ul li::before {
 }
 
 ul li:hover {
-    background: linear-gradient(137deg, #52b69a, #99d98c, #34a0a4 );
-    animation: ulli-anim 15s ease infinite;
-    background-size: 400% 400%;
+    background:#52b69a;
 }
-
-@keyframes ulli-anim{
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-
 ul li.selected{
    text-decoration: line-through; 
    color: #727272;
@@ -161,7 +164,10 @@ ul li img {
     background-size: 400% 400%;
     border-radius: 10px;
     outline-width: 1px;
-    animation: img-anim 5s ease infinite;
+    animation: base-animation 5s ease infinite;
+    -moz-animation: base-animation 5s ease infinite;
+    -webkit-animation: base-animation 5s ease infinite;
+    -o-animation: base-animation 5s ease infinite;
 }
 
 @keyframes img-anim{
@@ -174,6 +180,9 @@ ul li img:hover {
     background: linear-gradient(27deg, #f72585, #780000);
     background-size: 400% 400%;
     animation: img-anim 5s ease infinite;
+    -moz-animation: base-animation 5s ease infinite;
+    -webkit-animation: base-animation 5s ease infinite;
+    -o-animation: base-animation 5s ease infinite;
 }
 
 .input_area {
